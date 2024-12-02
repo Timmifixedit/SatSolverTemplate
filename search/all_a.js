@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['neg_35',['neg',['../namespacesat.html#a4ed8fff267e89956208d378830c3ab26',1,'sat']]],
-  ['negate_36',['negate',['../classsat_1_1Literal.html#aa04dc347cdd0addba545c32c238d33d8',1,'sat::Literal']]],
-  ['notimplementedexception_37',['NotImplementedException',['../structNotImplementedException.html',1,'']]]
+  ['neg_42',['neg',['../namespacesat.html#a4ed8fff267e89956208d378830c3ab26',1,'sat']]],
+  ['negate_43',['negate',['../classsat_1_1Literal.html#aa04dc347cdd0addba545c32c238d33d8',1,'sat::Literal']]],
+  ['notimplementedexception_44',['NotImplementedException',['../structNotImplementedException.html',1,'']]]
 ];

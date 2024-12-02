@@ -1,0 +1,13 @@
+<map id="Solver/inout.hpp" name="Solver/inout.hpp">
+<area shape="rect" id="node1" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ..." alt="" coords="191,5,319,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="421,229,497,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="24,80,96,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="140,155,202,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="172,80,242,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="267,80,342,107"/>
+<area shape="rect" id="node7" href="$basic__structures_8hpp.html" title="Contains the basic structures variable and literal." alt="" coords="265,155,421,181"/>
+<area shape="rect" id="node8" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="417,80,512,107"/>
+<area shape="rect" id="node9" href="$concepts_8hpp.html" title="Contains various type traits and concepts." alt="" coords="496,155,630,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="522,229,602,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="626,229,692,256"/>
+</map>

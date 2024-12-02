@@ -1,0 +1,11 @@
+<map id="Solver/Solver.hpp" name="Solver/Solver.hpp">
+<area shape="rect" id="node1" title="Contains the main solver class." alt="" coords="53,5,187,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,83,107"/>
+<area shape="rect" id="node3" href="$basic__structures_8hpp.html" title="Contains the basic structures variable and literal." alt="" coords="18,155,174,181"/>
+<area shape="rect" id="node4" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="182,80,277,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="198,155,261,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="261,229,337,256"/>
+<area shape="rect" id="node7" href="$concepts_8hpp.html" title="Contains various type traits and concepts." alt="" coords="336,155,469,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="361,229,441,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="465,229,532,256"/>
+</map>

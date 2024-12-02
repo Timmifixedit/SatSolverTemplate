@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['badheuristiccall_90',['BadHeuristicCall',['../classBadHeuristicCall.html',1,'']]]
+  ['badheuristiccall_100',['BadHeuristicCall',['../classBadHeuristicCall.html',1,'']]]
 ];

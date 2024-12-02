@@ -1,0 +1,7 @@
+<map id="Solver/basic_structures.hpp" name="Solver/basic_structures.hpp">
+<area shape="rect" id="node1" title="Contains the basic structures variable and literal." alt="" coords="101,5,302,32"/>
+<area shape="rect" id="node2" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="79,80,217,107"/>
+<area shape="rect" id="node3" href="$inout_8hpp.html" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ..." alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node4" href="$Solver_8hpp.html" title="Contains the main solver class." alt="" coords="173,155,307,181"/>
+<area shape="rect" id="node5" href="$heuristics_8hpp.html" title="Contains different branching heuristics." alt="" coords="293,80,451,107"/>
+</map>
