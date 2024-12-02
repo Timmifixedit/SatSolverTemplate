@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structsat_1_1FirstVariable.html" title="Variable selection strategy that selects the first unassigned variable." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node1" href="$structsat_1_1detail_1_1HeuristicCallableBase.html" title="This is a helper class for the implementation of a type erasure heuristic wrapper." alt="" coords="5,5,244,32"/>
+<area shape="rect" id="node2" href="$structsat_1_1detail_1_1HeuristicCallable.html" title="This is a helper class for the implementation of a type erasure heuristic wrapper." alt="" coords="292,5,539,32"/>
 </map>

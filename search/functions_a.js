@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['neg_160',['neg',['../namespacesat.html#a4ed8fff267e89956208d378830c3ab26',1,'sat']]],
-  ['negate_161',['negate',['../classsat_1_1Literal.html#aa04dc347cdd0addba545c32c238d33d8',1,'sat::Literal']]]
+  ['movableheuristic_192',['MovableHeuristic',['../classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192',1,'sat::MovableHeuristic']]]
 ];

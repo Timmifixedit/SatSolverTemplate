@@ -102,10 +102,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="concepts_8hpp__dep__incl.png" border="0" usemap="#aSolver_2util_2concepts_8hppdep" alt=""/></div>
 <map name="aSolver_2util_2concepts_8hppdep" id="aSolver_2util_2concepts_8hppdep">
-<area shape="rect" title="Contains various type traits and concepts." alt="" coords="87,5,265,32"/>
+<area shape="rect" title="Contains various type traits and concepts." alt="" coords="173,5,352,32"/>
 <area shape="rect" href="Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="107,80,245,107"/>
 <area shape="rect" href="inout_8hpp.html" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ..." alt="" coords="5,155,133,181"/>
 <area shape="rect" href="heuristics_8hpp.html" title="Contains different branching heuristics." alt="" coords="270,80,429,107"/>
+<area shape="rect" href="cli_8hpp.html" title="Contains Command Line Interface parsing utility." alt="" coords="453,80,587,107"/>
 <area shape="rect" href="Solver_8hpp.html" title="Contains the main solver class." alt="" coords="158,155,293,181"/>
 </map>
 </div>
@@ -175,6 +176,9 @@ template&lt;typename ... Ts&gt; </td></tr>
 <tr class="memitem:afaca4423f381288a5ef7a8869ab6ca51"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename... &gt; typename Template&gt; </td></tr>
 <tr class="memitem:afaca4423f381288a5ef7a8869ab6ca51"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesat_1_1concepts.html#afaca4423f381288a5ef7a8869ab6ca51">sat::concepts::same_template_clvref</a> = same_template_lvref&lt;T, Template&gt; and std::is_const_v&lt;std::remove_reference_t&lt;T&gt;&gt;</td></tr>
 <tr class="separator:afaca4423f381288a5ef7a8869ab6ca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4946b01c816ee51d7ad6199ff31f6f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9c4946b01c816ee51d7ad6199ff31f6f"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesat_1_1concepts.html#a9c4946b01c816ee51d7ad6199ff31f6f">sat::concepts::enum_type</a> = std::is_enum_v&lt;T&gt;</td></tr>
+<tr class="separator:a9c4946b01c816ee51d7ad6199ff31f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains various type traits and concepts. </p>

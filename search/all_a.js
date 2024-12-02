@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['neg_42',['neg',['../namespacesat.html#a4ed8fff267e89956208d378830c3ab26',1,'sat']]],
-  ['negate_43',['negate',['../classsat_1_1Literal.html#aa04dc347cdd0addba545c32c238d33d8',1,'sat::Literal']]],
-  ['notimplementedexception_44',['NotImplementedException',['../structNotImplementedException.html',1,'']]]
+  ['movableheuristic_48',['MovableHeuristic',['../classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192',1,'sat::MovableHeuristic::MovableHeuristic()'],['../classsat_1_1MovableHeuristic.html',1,'sat::MovableHeuristic&lt; H &gt;']]]
 ];

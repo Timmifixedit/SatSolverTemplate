@@ -1,7 +1,8 @@
 <map id="Solver/util/concepts.hpp" name="Solver/util/concepts.hpp">
-<area shape="rect" id="node1" title="Contains various type traits and concepts." alt="" coords="87,5,265,32"/>
+<area shape="rect" id="node1" title="Contains various type traits and concepts." alt="" coords="173,5,352,32"/>
 <area shape="rect" id="node2" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="107,80,245,107"/>
 <area shape="rect" id="node3" href="$inout_8hpp.html" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ..." alt="" coords="5,155,133,181"/>
 <area shape="rect" id="node5" href="$heuristics_8hpp.html" title="Contains different branching heuristics." alt="" coords="270,80,429,107"/>
+<area shape="rect" id="node6" href="$cli_8hpp.html" title="Contains Command Line Interface parsing utility." alt="" coords="453,80,587,107"/>
 <area shape="rect" id="node4" href="$Solver_8hpp.html" title="Contains the main solver class." alt="" coords="158,155,293,181"/>
 </map>

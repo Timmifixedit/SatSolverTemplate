@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notimplementedexception_110',['NotImplementedException',['../structNotImplementedException.html',1,'']]]
+  ['movableheuristic_132',['MovableHeuristic',['../classsat_1_1MovableHeuristic.html',1,'sat']]]
 ];

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7escopewatch_188',['~ScopeWatch',['../classsat_1_1ScopeWatch.html#a0c7dbddffdf900a6ae62f2e3088f9490',1,'sat::ScopeWatch']]]
+  ['val_224',['val',['../classsat_1_1Solver.html#aab2b14bdaabf37ce7bfcf95721337821',1,'sat::Solver']]],
+  ['var_225',['var',['../namespacesat.html#aacf5510b2316daa5787c58530ba8fc3e',1,'sat']]],
+  ['variable_226',['Variable',['../classsat_1_1Variable.html#a44f00bec2993fca0297ffccf4bed031b',1,'sat::Variable']]]
 ];

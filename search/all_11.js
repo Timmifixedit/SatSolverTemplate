@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['val_94',['val',['../classsat_1_1Solver.html#aab2b14bdaabf37ce7bfcf95721337821',1,'sat::Solver']]],
-  ['var_95',['var',['../namespacesat.html#aacf5510b2316daa5787c58530ba8fc3e',1,'sat']]],
-  ['variable_96',['Variable',['../classsat_1_1Variable.html',1,'sat::Variable'],['../classsat_1_1Variable.html#a44f00bec2993fca0297ffccf4bed031b',1,'sat::Variable::Variable()']]]
+  ['undefined_109',['Undefined',['../namespacesat.html#a7b51bf7b6f986d1b90bfa73ad8afd97eaec0fc0100c4fc1ce4eea230c3dc10360',1,'sat']]],
+  ['unitpropagate_110',['unitPropagate',['../classsat_1_1Solver.html#ab68cf85818aa01dc1ed543d770963bd8',1,'sat::Solver']]],
+  ['unregister_111',['unregister',['../classsat_1_1SubscriberHandle.html#a078db2c6d0235eaf41bda60113a8e885',1,'sat::SubscriberHandle']]]
 ];

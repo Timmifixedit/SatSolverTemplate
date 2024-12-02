@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printable_194',['printable',['../namespacesat_1_1concepts.html#aa8e72d7c4bde322753b36e54fcc50210',1,'sat::concepts']]]
+  ['heuristic_235',['heuristic',['../namespacesat.html#a5c668030c1ce0997602c7e7aa0efc4e8',1,'sat']]]
 ];

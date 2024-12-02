@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7escopewatch_98',['~ScopeWatch',['../classsat_1_1ScopeWatch.html#a0c7dbddffdf900a6ae62f2e3088f9490',1,'sat::ScopeWatch']]]
+  ['word_116',['Word',['../structsat_1_1detail_1_1Word.html',1,'sat::detail']]]
 ];

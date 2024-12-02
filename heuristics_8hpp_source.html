@@ -174,9 +174,30 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsat_1_1Heuristic.html#ab0d5345226720869a048ca307774f80c">isValid</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    };</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">//HEURISTICS_HPP</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">/**</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">     * @brief Wrapper for heuristics that do not support move construction or assignment</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">     * @tparam H heuristic type</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">template</span>&lt;heuristic H&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classsat_1_1MovableHeuristic.html">  105</a></span>&#160;    <span class="keyword">class</span> <a class="code" href="classsat_1_1MovableHeuristic.html">MovableHeuristic</a> {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        std::unique_ptr&lt;H&gt; h;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">/**</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">         * Ctor</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">         * @tparam Args argument types</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">         * @param args ctor arguments to heuristic</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">  114</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">MovableHeuristic</a>(Args &amp;&amp;...args): <a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">h</a>(<a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">std</a>::<a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">make_unique</a>&lt;<a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">H</a>&gt;(<a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">std</a>::<a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">forward</a>&lt;<a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">Args</a>&gt;(<a class="code" href="classsat_1_1MovableHeuristic.html#a07a3edb8703bc5b65515c67130bee192">args</a>)...)) {}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="classsat_1_1Variable.html">Variable</a> operator()(<span class="keyword">const</span> std::vector&lt;TruthValue&gt; &amp;values, std::size_t numOpenVariables) <span class="keyword">const</span> {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">return</span> h-&gt;operator()(values, numOpenVariables);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    };</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">//HEURISTICS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

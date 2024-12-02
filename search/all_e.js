@@ -1,24 +1,10 @@
 var searchData=
 [
-  ['concepts_61',['concepts',['../namespacesat_1_1concepts.html',1,'sat']]],
-  ['detail_62',['detail',['../namespacesat_1_1detail.html',1,'sat']]],
-  ['inout_63',['inout',['../namespacesat_1_1inout.html',1,'sat']]],
-  ['same_5ftemplate_64',['same_template',['../namespacesat_1_1concepts.html#a8358fe443e955e8cf6396fc49013d47f',1,'sat::concepts']]],
-  ['same_5ftemplate_5fclvref_65',['same_template_clvref',['../namespacesat_1_1concepts.html#afaca4423f381288a5ef7a8869ab6ca51',1,'sat::concepts']]],
-  ['same_5ftemplate_5flvref_66',['same_template_lvref',['../namespacesat_1_1concepts.html#a6db2737ca1d72b3e553a2aab79ff0a7b',1,'sat::concepts']]],
-  ['sameliterals_67',['sameLiterals',['../classsat_1_1Clause.html#a4a1f73e1cec271b3eedcea4c69264181',1,'sat::Clause']]],
-  ['sat_68',['sat',['../namespacesat.html',1,'']]],
-  ['satisfied_69',['satisfied',['../classsat_1_1Solver.html#a009724acf1eea146b1c47055dc232d00',1,'sat::Solver']]],
-  ['satsolvertemplate_70',['SatSolverTemplate',['../index.html',1,'']]],
-  ['scalar_71',['scalar',['../namespacesat_1_1concepts.html#ae6dfab5dc3c7ab74a005a44aaf99a7eb',1,'sat::concepts']]],
-  ['scopewatch_72',['ScopeWatch',['../classsat_1_1ScopeWatch.html',1,'sat::ScopeWatch'],['../classsat_1_1ScopeWatch.html#a7d3b03b168655de2fcdbb13ec24676e9',1,'sat::ScopeWatch::ScopeWatch()']]],
-  ['setseed_73',['setSeed',['../classsat_1_1RNG.html#ae7b1d27465bf9bc383c1c5a61b87ac0d',1,'sat::RNG']]],
-  ['setwatcher_74',['setWatcher',['../classsat_1_1Clause.html#a4a45cdb1d2c91d4a15d42fec9b33a864',1,'sat::Clause']]],
-  ['sign_75',['sign',['../classsat_1_1Literal.html#a337fd707344c87032c3da66fe006da30',1,'sat::Literal']]],
-  ['size_76',['size',['../classsat_1_1Clause.html#ac0af2c7ee0a217b75c5c1cfc5ac56f72',1,'sat::Clause']]],
-  ['solver_77',['Solver',['../classsat_1_1Solver.html',1,'sat::Solver'],['../classsat_1_1Solver.html#aca7ee638babd743c3ecdc15f9deff277',1,'sat::Solver::Solver()']]],
-  ['solver_2ehpp_78',['Solver.hpp',['../Solver_8hpp.html',1,'']]],
-  ['start_79',['start',['../structsat_1_1TimingEvent.html#ab8b6fc21bd4b2c0d982b7e3fb28af73a',1,'sat::TimingEvent::start()'],['../classsat_1_1StopWatch.html#afdc9c23f1a7d178fa4e51809091212f0',1,'sat::StopWatch::start()']]],
-  ['stopwatch_80',['StopWatch',['../classsat_1_1StopWatch.html',1,'sat::StopWatch'],['../classsat_1_1StopWatch.html#a06fb61ca0407daa51b346bce016231a2',1,'sat::StopWatch::StopWatch()']]],
-  ['traits_81',['traits',['../namespacesat_1_1traits.html',1,'sat']]]
+  ['random_2ehpp_62',['random.hpp',['../random_8hpp.html',1,'']]],
+  ['random_5ffloat_63',['random_float',['../classsat_1_1RNG.html#a1511bad39442ba89c34b24c9a9c30dd9',1,'sat::RNG']]],
+  ['random_5fint_64',['random_int',['../classsat_1_1RNG.html#afe6b058b72f418660a1d358318ba30a0',1,'sat::RNG']]],
+  ['read_5ffrom_5fdimacs_65',['read_from_dimacs',['../namespacesat_1_1inout.html#a263903cdfd8547fd93f5b23653e9ccfc',1,'sat::inout']]],
+  ['rebase_66',['rebase',['../classsat_1_1Solver.html#a180d05466ffb25fc4c9481a9a3dd0c66',1,'sat::Solver']]],
+  ['result_67',['Result',['../structsat_1_1Result.html',1,'sat']]],
+  ['rng_68',['RNG',['../classsat_1_1RNG.html',1,'sat']]]
 ];

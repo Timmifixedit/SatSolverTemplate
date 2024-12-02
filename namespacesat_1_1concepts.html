@@ -111,6 +111,9 @@ Variables</h2></td></tr>
 <tr class="memitem:afaca4423f381288a5ef7a8869ab6ca51"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename... &gt; typename Template&gt; </td></tr>
 <tr class="memitem:afaca4423f381288a5ef7a8869ab6ca51"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesat_1_1concepts.html#afaca4423f381288a5ef7a8869ab6ca51">same_template_clvref</a> = <a class="el" href="namespacesat_1_1concepts.html#a6db2737ca1d72b3e553a2aab79ff0a7b">same_template_lvref</a>&lt;T, Template&gt; and std::is_const_v&lt;std::remove_reference_t&lt;T&gt;&gt;</td></tr>
 <tr class="separator:afaca4423f381288a5ef7a8869ab6ca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4946b01c816ee51d7ad6199ff31f6f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9c4946b01c816ee51d7ad6199ff31f6f"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesat_1_1concepts.html#a9c4946b01c816ee51d7ad6199ff31f6f">enum_type</a> = std::is_enum_v&lt;T&gt;</td></tr>
+<tr class="separator:a9c4946b01c816ee51d7ad6199ff31f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>namespace containing various type concepts </p>
@@ -148,6 +151,23 @@ template&lt;typename R , typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>C++20 range whose values can be converted to a certain type </p>
+
+</div>
+</div>
+<a id="a9c4946b01c816ee51d7ad6199ff31f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4946b01c816ee51d7ad6199ff31f6f">&#9670;&nbsp;</a></span>enum_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept sat::concepts::enum_type = std::is_enum_v&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type that is an enum </p>
 
 </div>
 </div>
