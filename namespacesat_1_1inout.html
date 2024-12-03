@@ -93,6 +93,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8d2abdb6674b4fb0d60c61b88c7c01f3"><td class="memTemplParams" colspan="2">template&lt;std::ranges::range R&gt; </td></tr>
 <tr class="memitem:a8d2abdb6674b4fb0d60c61b88c7c01f3"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesat_1_1inout.html#a8d2abdb6674b4fb0d60c61b88c7c01f3">to_dimacs</a> (const R &amp;clauses)</td></tr>
 <tr class="separator:a8d2abdb6674b4fb0d60c61b88c7c01f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa25d0a173ef53fdfc672a5fd07c387f"><td class="memTemplParams" colspan="2">template&lt;concepts::typed_range&lt; Literal &gt; L&gt; </td></tr>
+<tr class="memitem:aaa25d0a173ef53fdfc672a5fd07c387f"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesat_1_1inout.html#aaa25d0a173ef53fdfc672a5fd07c387f">to_dimacs</a> (const L &amp;literals)</td></tr>
+<tr class="separator:aaa25d0a173ef53fdfc672a5fd07c387f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace containing dimacs io utilities. </p>
@@ -191,8 +194,41 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="aaa25d0a173ef53fdfc672a5fd07c387f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa25d0a173ef53fdfc672a5fd07c387f">&#9670;&nbsp;</a></span>to_dimacs() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::typed_range&lt; Literal &gt; L&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sat::inout::to_dimacs </td>
+          <td>(</td>
+          <td class="paramtype">const L &amp;&#160;</td>
+          <td class="paramname"><em>literals</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Converts a range of literals to dimacs format </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">L</td><td><a class="el" href="classsat_1_1Literal.html" title="Structure representing a literal in a CNF-SAT problem.">Literal</a> range type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">literals</td><td>the literals to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>dimacs string </dd></dl>
+
+</div>
+</div>
 <a id="a8d2abdb6674b4fb0d60c61b88c7c01f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d2abdb6674b4fb0d60c61b88c7c01f3">&#9670;&nbsp;</a></span>to_dimacs() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2abdb6674b4fb0d60c61b88c7c01f3">&#9670;&nbsp;</a></span>to_dimacs() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +273,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a376589301e45f91e85298fa8fecdc291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a376589301e45f91e85298fa8fecdc291">&#9670;&nbsp;</a></span>to_dimacs() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a376589301e45f91e85298fa8fecdc291">&#9670;&nbsp;</a></span>to_dimacs() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
