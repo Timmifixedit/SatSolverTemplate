@@ -248,19 +248,39 @@ $(function() {
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;   with a well-defined interface is that you can easily replace it later with something more powerful.</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;4. To test your solver, write a simple executable `solve.cpp` that you place in the main directory. You first need</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;   to load a problem using the functions from `Solver/input.hpp`. Then you configure your solver, run the search and</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;   finally print the result. You can print all basic structures directly using</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;   [`std::cout`](https://en.cppreference.com/w/cpp/io/cout) or you can convert your result back to the DIMACS format and print that.</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;5. Once your DPLL search works you can:</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;   * Implement a better value selection heuristic. If you used the `FirstVariable` heuristic in step 4 I recommend that</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;     you use this interface to create your own heuristic. Simply make a copy of `FirstVariable` in</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;     `Solver/heuristics.hpp` and don&#39;t forget the implementation in the `.cpp` file. You could for example try</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;     implementing a heuristic that randomly selects an unassigned variable (there is a random number generator in</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;     `Solver/util/random.hpp`).</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;   * Implement clause learning and ultimately CDCL search. This algorithm is much more powerful than DPLL and should be</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;     able to resolve even big problem instances.</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;Note: You will get a good grade if you manage to correctly implement DPLL, no need to do all the tasks in 5. But you</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;will get an even better grade if you put in some extra work :).</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;   finally print the result. When printing your solver output, please respect the following rules:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;   * If the instance is UNSAT, print the word `UNSAT`.</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;   * If the instance is SAT, print the solution (all unit literals) in DIMACS format. Use the function</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;     `sat::inout::to_dimacs` from ´Solver/inout.hpp´ and [`std::cout`](https://en.cppreference.com/w/cpp/io/cout).</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;   * Make sure to respect these rules. You can print other stuff as you like as long as you prepend it with the</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;     character `c` to mark the line as comment.</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;5. Once your DPLL search works you can:</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;   * Implement a better value selection heuristic. If you used the `FirstVariable` heuristic in step 4 I recommend that</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;     you use this interface to create your own heuristic. Simply make a copy of `FirstVariable` in</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;     `Solver/heuristics.hpp` and don&#39;t forget the implementation in the `.cpp` file. You could for example try</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;     implementing a heuristic that randomly selects an unassigned variable (there is a random number generator in</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;     `Solver/util/random.hpp`).</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;   * Implement restarting.</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;   * Implement clause learning and ultimately CDCL search. This algorithm is much more powerful than DPLL and should be</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;     able to resolve even big problem instances.</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;Note: You will get a good grade if you manage to correctly implement DPLL, no need to do all the tasks in 5. But you</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;will get an even better grade if you put in some extra work :).</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;## Grading</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;You should hand in a working solver leveraging at least the DPLL algorithm. Create a simple executable as described in</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;step 4 above. Your executable needs to accept at least one command line argument (the path to the problem instance).</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;If the solver accepts more arguments, please document them and give them meaningful default values. The solver needs to</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;be callable with just the problem instance. When printing your solution, respect the rules also detailed in step 4.</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;If you don&#39;t, you will lose points!</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;Your solver will be run on a set of different problem instances of different difficulties (the ones under `eval`).</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;The more instance you can solve, the better. Your solver will be given a timeout of 2 minutes for each instance. When</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;running your solver, your code will be built in release mode (with all optimizations) to make it faster. If you want</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;to see how fast your solver can go, you too should build in release mode.</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;Your solver should at least be able to solve the medium instances (both SAT and UNSAT). If it can solve the harder once,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;that&#39;s great. But above all, your solver should not crash. Make sure to write proper and safe code!</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
