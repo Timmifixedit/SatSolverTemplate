@@ -109,10 +109,10 @@ VS-Code</h2>
 <li><code>Run current target (lldb)</code>: Use this config if you're on MacOS or on Linux and use <code>clang</code> as compiler</li>
 <li><code>Run current target (msvc)</code>: Use this config if you're on Windows</li>
 </ul>
-<p>In any case, once you opened any code file, press F5 to run the current <em>Launch target</em>. This is the target that is selected in the <code>CMake Tools</code> tab in the sidebar under <code>Project Status/Launch</code>.</p>
+<p>In any case, once you opened any code file, press F5 to run the current <em>Launch target</em>. This is the target that is selected in the <code>CMake Tools</code> tab in the sidebar under <code>Project Status/Launch</code>. If F5 does not work, use the <code>Run and Debug</code> tab in the sidebar and select the appropriate launch config.</p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Manually using CMake</h2>
-<p>If you don't want to use one of the aforementioned methods, you can manually configure the project and work with any editor of your choice.</p><ol type="1">
+<p>If you don't want to use one of the aforementioned methods, you can manually configure the project and work with any editor of your choice. This is the most flexible option, and it's actually not that complicated. Just follow the instructions:</p><ol type="1">
 <li>Clone the repo and change into the folder</li>
 <li>Create a build folder for each build config (Debug / Release, e.g. build_dbg / build_rel)</li>
 <li>To configure the project run the following command (replace &lt;...&gt;): <div class="fragment"><div class="line">cmake -S . -B &lt;path to you build directory&gt; -DCMAKE_BUILD_TYPE=&lt;release/debug&gt;</div>
