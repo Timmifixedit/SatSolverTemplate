@@ -79,6 +79,11 @@ Setup</h1>
 <p>All the remaining dependencies are handled by cmake.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Configure the Project</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+If you can, DON'T USE WINDOWS</h2>
+<p>C++ development on Windows is awful! Use a virtual machine or WSL, I don't care. If you have no other options, you need to have a recent version of MSVC installed. If you're using VS-Code, make sure to launch it from the Windows developer console <a href="https://code.visualstudio.com/docs/cpp/config-msvc#_check-your-microsoft-visual-c-installation">Developer Command Prompt</a>! <b>Otherwise debugging from within VSC DOES NOT WORK PROPERLY!!!</b></p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+General Remarks</h2>
 <p>I recommend that you use a C++ IDE like CLion or an editor like VS-Code. Both have cmake integration making your life a lot easier. If you like suffering and plan on developing using a basic editor, fret naught, it's not that complicated, actually. The CMake project automatically configures all targets (the executables that you will run later) for you. The following targets should be configured automatically:</p><ul>
 <li>all_tests (runs all unit tests)</li>
 <li>test_basic_structures (runs only the tests for the basic structures like Variable and Literal)</li>
@@ -88,11 +93,11 @@ Configure the Project</h1>
 </ul>
 <p>If you want to add other executables (e.g. a 'solve' executable that reads a problem and tries to solve it), then you can add them in the main project file. For example, you could create <code>solve.cpp</code> file. In order to generate a build target, you need to rerun CMake.</p>
 <p>If you want to add a test, then you should add <code>test_&lt;name of your test&gt;.cpp</code> in the <code>Tests</code>-directory. Again you need to rerun CMake for the target to be generated.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 CLion</h2>
 <p>Simply clone the project and open the folder as project with CLion. It should do everything for you. On first launch CLion will probably ask you to create a CMake profile. Usually the proposed 'Debug' config is exactly what you want. You can additionally create a 'Release' config by clicking on the + icon above the Debug config and it will most likely create the appropriate release config automatically for you. When you're done just click ok. You can always add more configs later on.</p>
 <p>CLion should now automatically load the CMake project and configure all targets for you. You can select which target to build on the top right of your screen. All the targets mentioned above should be available.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 VS-Code</h2>
 <p>You need to install the official Microsoft <code>CMake Tools</code> extension. Clone the project and open the folder with VS-Code. If asked to trust the project, click on trust. VS-Code will probably ask you to select a 'Kit' for the project. Here you select your C++-compiler. Once done, the CMake project should automatically load.</p>
 <p>Select the <code>CMake Tools</code> extension sidebar on the left. Depending on you VSC configuration, you should see three tabs (usually on the left). In the 'Project Status' tab you should see six drop-down items:</p><ul>
@@ -110,7 +115,7 @@ VS-Code</h2>
 <li><code>Run current target (msvc)</code>: Use this config if you're on Windows</li>
 </ul>
 <p>In any case, once you opened any code file, press F5 to run the current <em>Launch target</em>. This is the target that is selected in the <code>CMake Tools</code> tab in the sidebar under <code>Project Status/Launch</code>. If F5 does not work, use the <code>Run and Debug</code> tab in the sidebar and select the appropriate launch config.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Manually using CMake</h2>
 <p>If you don't want to use one of the aforementioned methods, you can manually configure the project and work with any editor of your choice. This is the most flexible option, and it's actually not that complicated. Just follow the instructions:</p><ol type="1">
 <li>Clone the repo and change into the folder</li>
@@ -122,29 +127,29 @@ Manually using CMake</h2>
 </div><!-- fragment --></li>
 <li>Whenever you add new target (e.g. the solve executable) make sure to rerun CMake (just retype the command in 3.)</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Project Structure</h1>
 <p>The goal of this course is to develop a simple SAT-solver in C++. Don't worry if you're not very familiar with this language. This template should help you focus on the logic of the solver instead of worrying about implementation details. On the other hand, if you're a C++ pro then feel free to deviate from the template as you see fit.</p>
 <p>You can find a doxygen generated documentation of all the structures <a href="https://timmifixedit.github.io/SatSolverTemplate/files.html">here</a>.</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Implementation of the Solver</h2>
 <p>The solver will be developed as a C++-class in <code><a class="el" href="Solver_8hpp.html" title="Contains the main solver class.">Solver/Solver.hpp</a>(cpp)</code>. As a reminder, in C and C++ we usually <em>declare</em> functions and classes in the header file. A declaration involves only the function signatures and the class members. The actual <em>implementation</em> will be done in the <code>.cpp</code> file. Exceptions are template classes and functions, but normally you don't need to worry about that too much. To facilitate the implementation of the solver, we'll make use of the following constructs:</p><ul>
 <li>Variable and Literal (in <code><a class="el" href="basic__structures_8hpp.html" title="Contains the basic structures variable and literal.">Solver/basic_structures.hpp</a>(cpp)</code>)</li>
 <li>Clause (in <code><a class="el" href="Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals.">Solver/Clause.hpp</a>(cpp)</code>)</li>
 </ul>
 <p>Additionally, I already implemented some helping constructs in <code>Solver/util</code> as well as functions for reading and writing SAT-formulas in <code><a class="el" href="inout_8hpp.html" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ...">Solver/inout.hpp</a>(cpp)</code>.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 Unit Tests using GTest</h2>
 <p>Under the <code>Tests</code> directory I implemented some unit tests using the <a href="https://google.github.io/googletest/">GTest framework</a> for the different structures that you will implement. They are by no means exhaustive but should give you some idea of how to use the structures and what they should do. Feel free to add further testcases if you wish (the language is pretty straightforward). The tests are grouped by implementation task (tests for the basic structures, for the clauses and for the solver itself). Also, I included 4 test cases for the unit propagation algorithm. Each of those test groups compiles to a separate testing executable. This means you can run them separately. Alternatively, you can run all tests using the <code>all_tests</code> target. Initially, all tests will fail since the implementations of all methods are missing. If you want to add a new test executable, make sure to respect the naming convention <code>test_&lt;name of your test&gt;.cpp</code>. Or you can simply add test cases in the test files already present.</p>
 <p>You're implementation should pass all unit tests with the exception of the tests in <code>test_clause.cpp</code> (if you plan on implementing the unit propagation using counters, you don't need to implement a Clause-class). Especially the unit propagation tests will be used to determine your grade for this TP.</p>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Exercises</h1>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 1. Basic Structures</h2>
 <p>First we will focus on the implementation of the structures that we use for representing the problem: Variable and Literal. A Variable is more or less just an ID identifying a variable in the SAT-formula. A Literal represents one of two values that a variable can take. Since the variables are boolean, the only possible values for let's say a variable <code>x</code> are <code>x</code> and <code>¬x</code>.</p>
 <p>Follow the documentation in <code><a class="el" href="basic__structures_8hpp.html" title="Contains the basic structures variable and literal.">Solver/basic_structures.hpp</a></code> to implement all the necessary functions. Remember that the implementation goes in the file <code>Solver/basic_structures.cpp</code> (simply replace all the method bodies).</p>
 <p>Test your implementation by building and running the test target <code>test_basic_structures</code>.</p>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 2. Clause</h2>
 <p>Next we need a structure to represent clauses. This can be a simple list that holds a variable number of literals. I recommend using <a href="https://en.cppreference.com/w/cpp/container/vector"><code>std::vector</code></a> from the header <code>&lt;vector&gt;</code>. This is a variable sized array that holds elements in a contiguous block of memory which makes it very efficient in loops and also provides efficient random access. Now you have two choices:</p><ol type="1">
 <li>If you want to implement the unit propagation algorithm using counters, then you don't need to implement anything. Simply use <code>std::vector&lt;Literal&gt;</code> as your clause. I recommend that you create a type alias as follows <div class="fragment"><div class="line">{c++}</div>
@@ -152,7 +157,7 @@ Exercises</h1>
 </div><!-- fragment --> This alias is actually necessary because the tests depend on it. On top of that, it makes your code mor readable. If you choose this option, you can simply delete the class <code>Clause</code> in <code><a class="el" href="Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals.">Solver/Clause.hpp</a></code> and remove all the implementations from <code>Solver/Clause.cpp</code> (if you delete the <code>.cpp</code> file, you need to reload CMake). In this case we don't care that the unit tests for the clause class don't work. You can simply delete <code>Tests/test_clause.cpp</code> and reload CMake.</li>
 <li>If you want to implement the more efficient unit propagation using watch literals, I recommend that you use the <code>Clause</code>-class already declared in <code><a class="el" href="Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals.">Solver/Clause.hpp</a></code>. Again, you will need to implement all functions in the corresponding <code>.cpp</code> file. The class is designed to be immutable. You are not supposed to change a SAT-<code>Clause</code> once it has been declared (you cannot add or remove literals). Follow the documentation already provided and test your code using the test target <code>test_clause</code>.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 Solver</h2>
 <p>No we get to the actual solver. Depending on the approach that you choose for the unit propagation you need to organize your Clauses and Literals. In any case, you additionally need to keep track of the current variable assignment, i.e. the <em>model</em>. This means that you need to save the truth value of every variable. A variable can either be <code>true</code>, <code>false</code> or <code>unassigned</code>. Independently of your unit propagation algorithm you need to be able to efficiently look up clauses by literals. Since you don't want to have multiple copies of the same clauses in your solver, you need to organize them using pointers. I recommend that you use <a href="https://en.cppreference.com/w/cpp/memory/shared_ptr"><code>std::shared_ptr</code></a> for that purpose. I already made the type aliases <code>ClausePointer</code> and <code>ConstClausePointer</code> for you in <code><a class="el" href="Solver_8hpp.html" title="Contains the main solver class.">Solver/Solver.hpp</a></code>. The advantage with <a href="https://en.cppreference.com/w/cpp/memory/shared_ptr"><code>std::shared_ptr</code></a> is that you don't need to worry about memory management.</p>
 <ol type="1">
@@ -173,7 +178,7 @@ Solver</h2>
 </li>
 </ol>
 <p>Note: You will get a good grade if you manage to correctly implement DPLL, no need to do all the tasks in 5. But you will get an even better grade if you put in some extra work :).</p>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Grading</h1>
 <p>You should hand in a working solver leveraging at least the DPLL algorithm. Create a simple executable as described in step 4 above. Your executable needs to accept at least one command line argument (the path to the problem instance). If the solver accepts more arguments, please document them and give them meaningful default values. The solver needs to be callable with just the problem instance. When printing your solution, respect the rules also detailed in step 4. If you don't, you will lose points!</p>
 <p>Your solver will be run on a set of different problem instances of different difficulties (the ones under <code>eval</code>). The more instance you can solve, the better. Your solver will be given a timeout of 2 minutes for each instance. When running your solver, your code will be built in release mode (with all optimizations) to make it faster. If you want to see how fast your solver can go, you too should build in release mode.</p>
