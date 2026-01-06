@@ -270,7 +270,7 @@ int main() {
 }
 ```
 
-## Command Line Parser
+### Command Line Parser
 When you implement exercise 3.4, you'll probably want to read the problem from a file that you pass via command line
 arguments. Additionally, you might want to configure your solver via additional flags. I already implemented a simple
 argument parser. It can be found in `Solver/util/cli.hpp`. The main method `parse` will return the path to the problem
