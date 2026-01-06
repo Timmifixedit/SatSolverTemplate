@@ -248,8 +248,8 @@ Reading and Writing DIMACS</h2>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="ainout_8hpp_html"><div class="ttname"><a href="inout_8hpp.html">inout.hpp</a></div><div class="ttdoc">Contains functions for reading and writing dimacs format.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md18"></a>
-Command Line Parser</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md18"></a>
+Command Line Parser</h2>
 <p>When you implement exercise 3.4, you'll probably want to read the problem from a file that you pass via command line arguments. Additionally, you might want to configure your solver via additional flags. I already implemented a simple argument parser. It can be found in <code><a class="el" href="cli_8hpp.html" title="Contains Command Line Interface parsing utility.">Solver/util/cli.hpp</a></code>. The main method <code>parse</code> will return the path to the problem instance (the first argument that you pass to your program) and accepts additional options. Let's say that you solver additionally accepts an argument <code>verbose</code> that configures how much information is printed during the solving process. Also, it optionally accepts a switch arg in order to select between DPLL and CDCL. </p><div class="fragment"><div class="line"> ++</div>
 <div class="line"><span class="preprocessor">#inclue &quot;Solver/util/cli.hpp&quot;</span></div>
 <div class="line"> </div>
