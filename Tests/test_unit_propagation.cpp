@@ -41,7 +41,7 @@ auto loadSolution(const std::string &cnfFile) {
     return clauses;
 }
 
-void testEquality(std::vector<std::vector<sat::Literal>> groundTruth, const std::vector<sat::Clause> &result) {
+void testEquality(const std::vector<std::vector<sat::Literal>> &groundTruth, const std::vector<sat::Clause> &result) {
     ASSERT_EQ(groundTruth.size(), result.size()) << "The number of clauses in the solution is not the same";
     for (auto &clause : groundTruth) {
         if(not test::findClause(clause, result)) {
@@ -62,7 +62,7 @@ TEST(unit_propagation, problem1) {
     auto solver = loadSolver(test::TestData::UnitPropagationProblem1);
     ASSERT_TRUE(solver.unitPropagate()) << "Unit propagation failed";
     auto gt = loadSolution(test::TestData::UnitPropagationSolution1);
-    testEquality(std::move(gt), solver.rebase());
+    testEquality(gt, solver.rebase());
 }
 
 TEST(unit_propagation, problem2) {
@@ -76,7 +76,7 @@ TEST(unit_propagation, problem3) {
     auto solver = loadSolver(test::TestData::UnitPropagationProblem3);
     ASSERT_TRUE(solver.unitPropagate()) << "Unit propagation failed";
     auto gt = loadSolution(test::TestData::UnitPropagationSolution3);
-    testEquality(std::move(gt), solver.rebase());
+    testEquality(gt, solver.rebase());
 }
 
 TEST(unit_propagation, problem4) {
@@ -84,7 +84,7 @@ TEST(unit_propagation, problem4) {
     auto solver = loadSolver(test::TestData::UnitPropagationProblem4);
     ASSERT_TRUE(solver.unitPropagate()) << "Unit propagation failed";
     auto gt = loadSolution(test::TestData::UnitPropagationSolution4);
-    testEquality(std::move(gt), solver.rebase());
+    testEquality(gt, solver.rebase());
 }
 
 #ifndef __RUN_ALL_TESTS__
