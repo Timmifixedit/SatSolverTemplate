@@ -159,7 +159,7 @@ The class is designed to be immutable. You are not supposed to change a SAT-`Cla
 (you cannot add or remove literals). Follow the documentation already provided and test your  code using the test target
 `test_clause`.
 
-### Solver
+### 3. Solver
 No we get to the actual solver. Depending on the approach that you choose for the unit propagation you need to organize
 your Clauses and Literals. In any case, you additionally need to keep track of the current variable assignment, i.e.
 the *model*. This means that you need to save the truth value of every variable. A variable can either be `true`,
@@ -202,6 +202,98 @@ you don't need to worry about memory management.
 
 Note: You will get a good grade if you manage to correctly implement DPLL, no need to do all the tasks in 5. But you
 will get an even better grade if you put in some extra work :).
+
+## Tips and Tricks
+Here are some useful things that hopefully make your life easier.
+
+### Printing Stuff
+In C++ you need to define a custom `<<` operator in order to print your own types. I've already done that for you. If
+you want to display variables or literals in the console, you can include the header `printing.hpp`. Example:
+```c++
+#include <iostream>
+#include "Solver/basic_structures.hpp"
+#include "Solver/printing.hpp"
+
+int main() {
+    using namespace sat;
+    Variable x = 5;
+    Literal notX = neg(x);
+    std::cout << x << std::endl;
+    std::cout << notX << std::endl;
+    return 0;
+}
+```
+
+The printing header also adds support for arbitrary ranges and tuples of printable types. For example, you can directly
+print a `std::vector<Literal>` (or even your clause class as soon as you implemented the `begin` and `end` functions):
+```c++
+#include <iostream>
+#include <vector>
+#include <tuple>
+#include "Solver/Clause.hpp"
+#include "Solver/printing.hpp"
+
+int main() {
+    using namespace sat;
+    Clause clause({pos(3), neg(6), neg(1)});
+    std::cout << clause << std::endl;
+    // You can even print a list of clauses:
+    std::vector clauses{clause, clause, clause};
+    std::cout << clauses << std::endl;
+    // Or a tuple
+    std::tuple tuple(clause, Variable(3), neg(4));
+    std::cout << tuple << std::endl;
+    return 0;
+}
+```
+
+### Reading and Writing DIMACS
+The header `inout.hpp` contains functions for converting literals and clauses to and from DIMACS. Example:
+```c++
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "Solver/Clause.hpp"
+#include "Solver/inout.hpp"
+
+int main() {
+    using namespace sat;
+    // write
+    Clause c{pos(3), neg(4), neg(1)};
+    std::string dimacs = inout::to_dimacs(c);
+    std::cout << dimacs << std::endl;
+    // read
+    std::ifstream input("input.cnf");
+    assert(input.is_open());
+    auto [clauses, numVar] = inout::read_from_dimacs(input);
+    return 0;
+}
+```
+
+## Command Line Parser
+When you implement exercise 3.4, you'll probably want to read the problem from a file that you pass via command line
+arguments. Additionally, you might want to configure your solver via additional flags. I already implemented a simple
+argument parser. It can be found in `Solver/util/cli.hpp`. The main method `parse` will return the path to the problem
+instance (the first argument that you pass to your program) and accepts additional options. Let's say that you solver
+additionally accepts an argument `verbose` that configures how much information is printed during the solving process.
+Also, it optionally accepts a switch arg in order to select between DPLL and CDCL.
+```c++
+#inclue "Solver/util/cli.hpp"
+
+int main(int argc, char **argv) {
+    using namespace sat;
+    bool useCDCL = false; // default value for argument: false
+    int verbosity = 1; // default value for argument: 1
+    const auto instanceFile = cli::parse(argc, argv,
+        cli::ValueArg(/* name */ "--verbose", /* target variable */verbosity, /* required argument? */false),
+        cli::SwitchArg("--use-cdcl", useCDCL));
+    // ... rest of you program
+}
+```
+When you invoke your program the following way: `./solver eval/sat/easy/instance.cnf --verbose 3 --use-cdcl`,
+The variable `verbosity` will be 3 and the bool `useCDCL` will be true.
+
+You can add as many argument specifications as you like. Simply add them as arguments to the function `parse`.
 
 ## Grading
 You should hand in a working solver leveraging at least the DPLL algorithm. Create a simple executable as described in
