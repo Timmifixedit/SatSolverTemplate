@@ -8,8 +8,8 @@
 #include <gmock/gmock.h>
 #include <algorithm>
 
+#include "printing.hpp"
 #include "Solver.hpp"
-#include "inout.hpp"
 #include "testing_utils.hpp"
 
 TEST(solver, initial_assignment) {

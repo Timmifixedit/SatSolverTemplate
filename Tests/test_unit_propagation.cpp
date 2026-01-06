@@ -11,6 +11,7 @@
 
 #include "Solver.hpp"
 #include "inout.hpp"
+#include "printing.hpp"
 #include "testing_utils.hpp"
 
 sat::Solver loadSolver(const std::string &cnfFile) {

@@ -2,7 +2,7 @@
 * @author Tim Luchterhand
 * @date 27.11.24
 * @file inout.hpp
-* @brief Contains functions for reading and writing dimacs format. Also contains printing utilities for basic structures
+* @brief Contains functions for reading and writing dimacs format.
 */
 
 #ifndef INOUT_HPP
@@ -95,39 +95,6 @@ namespace sat::inout {
     template<concepts::typed_range<Literal> L>
     std::string to_dimacs(const L &literals) {
         return to_dimacs(literals | std::views::transform([](auto literal) { return std::vector{literal}; }));
-    }
-}
-
-namespace sat {
-    /**
-     * Ostream operator allowing for easy printing of variables
-     */
-    std::ostream &operator<<(std::ostream &os, Variable x);
-
-    /**
-     * Ostream operator allowing for easy printing of literals
-     */
-    std::ostream &operator<<(std::ostream &os, Literal l);
-
-    /**
-     * Ostream operator allowing for easy printing of clauses
-     * @tparam ClauseT clause type
-     */
-    template<clause_like ClauseT>
-    std::ostream &operator<<(std::ostream &os, const ClauseT &clause) {
-        os << "[";
-        bool first = true;
-        for (const auto &l: clause) {
-            if (!first) {
-                os << ", ";
-            }
-
-            os << l;
-            first = false;
-        }
-
-        os << "]";
-        return os;
     }
 }
 

@@ -81,14 +81,6 @@ namespace sat::concepts {
     concept ttyped_range = std::ranges::range<R> && traits::is_same_template_v<T, std::ranges::range_value_t<R>>;
 
     /**
-     * Type that can be printed to an std::ostream
-     */
-    template<typename T>
-    concept printable = requires(const T &obj, std::ostream &os) {
-        os << obj;
-    };
-
-    /**
      * Type that is of a given incomplete template type
      */
     template<typename T, template<typename...> typename Template>

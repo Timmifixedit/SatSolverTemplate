@@ -92,16 +92,3 @@ namespace sat::inout {
         return {std::move(ret), numVars};
     }
 }
-
-namespace sat {
-    std::ostream &operator<<(std::ostream &os, sat::Variable x) {
-        os << "Var " << x.get();
-        return os;
-    }
-
-    std::ostream &operator<<(std::ostream &os, sat::Literal l) {
-        auto sign = l.sign() < 0 ? "¬" : "";
-        os << "Lit " << sign << sat::var(l).get() << " (" << l.get() << ")";
-        return os;
-    }
-}
