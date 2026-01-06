@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['_7escopewatch_123',['~ScopeWatch',['../classsat_1_1ScopeWatch.html#a0c7dbddffdf900a6ae62f2e3088f9490',1,'sat::ScopeWatch']]],
-  ['_7esubscriberhandle_124',['~SubscriberHandle',['../classsat_1_1SubscriberHandle.html#aa11b5123859fac60b96790540fbe88c1',1,'sat::SubscriberHandle']]]
+  ['undefined_0',['Undefined',['../namespacesat.html#a7b51bf7b6f986d1b90bfa73ad8afd97eaec0fc0100c4fc1ce4eea230c3dc10360',1,'sat']]],
+  ['unit_20tests_20using_20gtest_1',['Unit Tests using GTest',['../index.html#autotoc_md10',1,'']]],
+  ['unitpropagate_2',['unitPropagate',['../classsat_1_1Solver.html#ab68cf85818aa01dc1ed543d770963bd8',1,'sat::Solver']]],
+  ['unregister_3',['unregister',['../classsat_1_1SubscriberHandle.html#a078db2c6d0235eaf41bda60113a8e885',1,'sat::SubscriberHandle']]],
+  ['use_20windows_4',['If you can, DON&apos;T USE WINDOWS',['../index.html#autotoc_md3',1,'']]],
+  ['using_20cmake_5',['Manually using CMake',['../index.html#autotoc_md7',1,'']]],
+  ['using_20gtest_6',['Unit Tests using GTest',['../index.html#autotoc_md10',1,'']]]
 ];

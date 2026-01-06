@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['callable_5fr_241',['callable_r',['../namespacesat_1_1concepts.html#a7c1d8dffcd0d93775cbd11322345dbdb',1,'sat::concepts']]],
-  ['clause_5flike_242',['clause_like',['../namespacesat.html#a68cdb7a71efee028534539b63e460f64',1,'sat']]],
-  ['ctyped_5frange_243',['ctyped_range',['../namespacesat_1_1concepts.html#ae535a4aac107b1ecfd4ba1043d6425c7',1,'sat::concepts']]]
+  ['start_0',['start',['../structsat_1_1TimingEvent.html#ab8b6fc21bd4b2c0d982b7e3fb28af73a',1,'sat::TimingEvent']]]
 ];

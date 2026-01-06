@@ -1,11 +1,21 @@
 <map id="Solver/Solver.hpp" name="Solver/Solver.hpp">
-<area shape="rect" id="node1" title="Contains the main solver class." alt="" coords="53,5,187,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,83,107"/>
-<area shape="rect" id="node3" href="$basic__structures_8hpp.html" title="Contains the basic structures variable and literal." alt="" coords="18,155,174,181"/>
-<area shape="rect" id="node4" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="182,80,277,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="198,155,261,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="261,229,337,256"/>
-<area shape="rect" id="node7" href="$concepts_8hpp.html" title="Contains various type traits and concepts." alt="" coords="336,155,469,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="361,229,441,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="465,229,532,256"/>
+<area shape="rect" id="Node000001" title="Contains the main solver class." alt="" coords="53,5,187,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,83,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,33,68,71,65,67,106,29"/>
+<area shape="rect" id="Node000003" href="$basic__structures_8hpp.html" title="Contains the basic structures variable and literal." alt="" coords="18,152,174,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,32,103,139,98,138,115,31"/>
+<area shape="rect" id="Node000004" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="182,79,277,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,28,201,69,198,73,136,33"/>
+<area shape="poly" id="edge10_Node000004_Node000003" title=" " alt="" coords="209,106,131,148,129,143,207,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="198,152,261,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="232,104,232,138,227,138,227,104"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="261,225,337,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="241,103,258,124,274,151,287,182,296,211,291,213,282,184,270,153,254,127,237,106"/>
+<area shape="rect" id="Node000007" href="$concepts_8hpp.html" title="Contains various type traits and concepts." alt="" coords="336,152,469,177"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="258,102,363,144,361,149,256,106"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="387,180,329,219,326,215,384,175"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="361,225,441,251"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="405,178,404,212,399,212,400,178"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="465,225,532,251"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="420,175,473,215,470,219,417,180"/>
 </map>

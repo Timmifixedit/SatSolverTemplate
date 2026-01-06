@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classsat_1_1SubscriberHandle.html" title="Identifies a function handler subscribed to a SubscribableEvent. Can be used to unsubscribe the funct..." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,45,124,70"/>
+<area shape="rect" id="Node000001" href="$structsat_1_1traits_1_1always__false.html" title=" " alt="" coords="200,5,339,45"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="138,43,199,34,200,39,138,49"/>
+<area shape="rect" id="Node000002" href="$structsat_1_1traits_1_1is__same__template.html" title=" " alt="" coords="172,69,367,109"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="138,66,172,71,171,77,138,71"/>
 </map>

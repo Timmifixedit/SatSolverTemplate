@@ -1,13 +1,28 @@
 <map id="Solver/inout.hpp" name="Solver/inout.hpp">
-<area shape="rect" id="node1" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ..." alt="" coords="191,5,319,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="421,229,497,256"/>
-<area shape="rect" id="node3" title=" " alt="" coords="24,80,96,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="140,155,202,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="172,80,242,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="267,80,342,107"/>
-<area shape="rect" id="node7" href="$basic__structures_8hpp.html" title="Contains the basic structures variable and literal." alt="" coords="265,155,421,181"/>
-<area shape="rect" id="node8" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="417,80,512,107"/>
-<area shape="rect" id="node9" href="$concepts_8hpp.html" title="Contains various type traits and concepts." alt="" coords="496,155,630,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="522,229,602,256"/>
-<area shape="rect" id="node11" title=" " alt="" coords="626,229,692,256"/>
+<area shape="rect" id="Node000001" title="Contains functions for reading and writing dimacs format." alt="" coords="191,5,319,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="421,225,497,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,21,122,26,56,38,31,49,14,63,8,80,15,103,36,133,61,150,128,175,202,198,278,215,408,231,407,236,277,220,201,204,126,180,58,155,33,137,10,105,3,80,10,60,28,45,55,33,122,20,191,16"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="24,79,96,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,33,106,76,104,71,223,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="140,152,202,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="222,33,188,52,173,64,161,80,156,94,156,109,162,138,157,139,150,109,151,93,157,77,169,61,185,47,219,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="172,79,242,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="249,33,224,69,220,66,245,30"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="267,79,342,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="265,29,291,66,286,69,261,33"/>
+<area shape="rect" id="Node000007" href="$basic__structures_8hpp.html" title="Contains the basic structures variable and literal." alt="" coords="265,152,421,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="293,28,327,47,343,61,356,77,361,93,362,109,356,139,351,138,357,109,356,94,351,80,339,64,324,52,290,33"/>
+<area shape="rect" id="Node000008" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="417,79,512,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="289,28,418,72,416,77,288,33"/>
+<area shape="rect" id="Node000009" href="$concepts_8hpp.html" title="Contains various type traits and concepts." alt="" coords="496,152,630,177"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="320,24,437,44,490,59,526,77,539,90,548,106,560,137,555,139,544,108,534,93,523,81,488,64,436,49,319,29"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="466,105,462,212,457,212,461,104"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="418,107,216,155,215,150,416,101"/>
+<area shape="poly" id="edge14_Node000008_Node000007" title=" " alt="" coords="446,106,376,147,373,143,443,102"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="482,102,537,142,534,146,479,106"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="548,180,489,219,486,215,545,175"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="522,225,602,251"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="565,178,565,212,559,212,560,178"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="626,225,692,251"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="580,175,634,215,630,219,577,180"/>
 </map>

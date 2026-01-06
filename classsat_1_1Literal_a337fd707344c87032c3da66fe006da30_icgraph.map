@@ -1,5 +1,5 @@
 <map id="sat::Literal::sign" name="sat::Literal::sign">
-<area shape="rect" id="node1" title=" " alt="" coords="212,31,339,57"/>
-<area shape="rect" id="node2" href="$namespacesat.html#af1cf0c25df4fd1169cc23f7f115ca331" title=" " alt="" coords="21,5,148,32"/>
-<area shape="rect" id="node3" href="$namespacesat_1_1inout.html#a376589301e45f91e85298fa8fecdc291" title=" " alt="" coords="5,56,164,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="180,5,307,31"/>
+<area shape="rect" id="Node000002" href="$namespacesat.html#a4d75ecf7f80ea6dbae6c0746c971a508" title=" " alt="" coords="5,5,132,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,21,132,21,132,15,167,15"/>
 </map>

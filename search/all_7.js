@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['has_34',['has',['../classsat_1_1Profiler.html#a4708a79eb76c094685dcd177d9b7979d',1,'sat::Profiler']]],
-  ['heuristic_35',['Heuristic',['../classsat_1_1Heuristic.html#aa9621d93106107e4a36d7d0cf064203f',1,'sat::Heuristic::Heuristic()=default'],['../classsat_1_1Heuristic.html#ae2b702dcab76d7e13a135e31102271b5',1,'sat::Heuristic::Heuristic(H &amp;&amp;heuristic)']]],
-  ['heuristic_36',['heuristic',['../namespacesat.html#a5c668030c1ce0997602c7e7aa0efc4e8',1,'sat']]],
-  ['heuristic_37',['Heuristic',['../classsat_1_1Heuristic.html',1,'sat']]],
-  ['heuristiccallable_38',['HeuristicCallable',['../structsat_1_1detail_1_1HeuristicCallable.html',1,'sat::detail']]],
-  ['heuristiccallablebase_39',['HeuristicCallableBase',['../structsat_1_1detail_1_1HeuristicCallableBase.html',1,'sat::detail']]],
-  ['heuristics_2ehpp_40',['heuristics.hpp',['../heuristics_8hpp.html',1,'']]]
+  ['elapsed_0',['elapsed',['../classsat_1_1StopWatch.html#a8c015d078c5336d82e67195ba66e6109',1,'sat::StopWatch']]],
+  ['end_1',['end',['../structsat_1_1TimingEvent.html#a2b2353ee042d3ed0dd11771e65772007',1,'sat::TimingEvent::end'],['../classsat_1_1Clause.html#a253201faf1c2d8369d7315b6afbdbb90',1,'sat::Clause::end()']]],
+  ['enum_2ehpp_2',['enum.hpp',['../enum_8hpp.html',1,'']]],
+  ['exception_2ehpp_3',['exception.hpp',['../exception_8hpp.html',1,'']]],
+  ['exercises_4',['Exercises',['../index.html#autotoc_md11',1,'']]]
 ];

@@ -1,4 +1,5 @@
 <map id="sat::StopWatch" name="sat::StopWatch">
-<area shape="rect" id="node1" title="Used to measure time between start a start and a stop event." alt="" coords="11,5,129,32"/>
-<area shape="rect" id="node2" href="$classsat_1_1ScopeWatch.html" title="Stop watch that automatically adds a timing event to a profiler at destruction." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="Node000001" title="Used to measure time between start a start and a stop event." alt="" coords="11,5,129,31"/>
+<area shape="rect" id="Node000002" href="$classsat_1_1ScopeWatch.html" title="Stop watch that automatically adds a timing event to a profiler at destruction." alt="" coords="5,79,135,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,67,79,67,44"/>
 </map>

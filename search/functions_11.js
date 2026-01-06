@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unitpropagate_233',['unitPropagate',['../classsat_1_1Solver.html#ab68cf85818aa01dc1ed543d770963bd8',1,'sat::Solver']]],
-  ['unregister_234',['unregister',['../classsat_1_1SubscriberHandle.html#a078db2c6d0235eaf41bda60113a8e885',1,'sat::SubscriberHandle']]]
+  ['unitpropagate_0',['unitPropagate',['../classsat_1_1Solver.html#ab68cf85818aa01dc1ed543d770963bd8',1,'sat::Solver']]],
+  ['unregister_1',['unregister',['../classsat_1_1SubscriberHandle.html#a078db2c6d0235eaf41bda60113a8e885',1,'sat::SubscriberHandle']]]
 ];

@@ -1,4 +1,5 @@
 <map id="sat::detail::HeuristicCallable&lt; H &gt;" name="sat::detail::HeuristicCallable&lt; H &gt;">
-<area shape="rect" id="node1" title="This is a helper class for the implementation of a type erasure heuristic wrapper." alt="" coords="5,80,252,107"/>
-<area shape="rect" id="node2" href="$structsat_1_1detail_1_1HeuristicCallableBase.html" title="This is a helper class for the implementation of a type erasure heuristic wrapper." alt="" coords="9,5,248,32"/>
+<area shape="rect" id="Node000001" title="This is a helper class for the implementation of a type erasure heuristic wrapper." alt="" coords="5,79,252,104"/>
+<area shape="rect" id="Node000002" href="$structsat_1_1detail_1_1HeuristicCallableBase.html" title="This is a helper class for the implementation of a type erasure heuristic wrapper." alt="" coords="9,5,248,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,44,131,79,126,79,126,44"/>
 </map>

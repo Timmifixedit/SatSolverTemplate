@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['satsolvertemplate_260',['SatSolverTemplate',['../index.html',1,'']]]
+  ['satsolvertemplate_0',['SatSolverTemplate',['../index.html',1,'']]]
 ];

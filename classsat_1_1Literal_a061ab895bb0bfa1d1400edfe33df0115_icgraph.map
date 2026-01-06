@@ -1,4 +1,5 @@
 <map id="sat::Literal::get" name="sat::Literal::get">
-<area shape="rect" id="node1" title=" " alt="" coords="180,5,300,32"/>
-<area shape="rect" id="node2" href="$namespacesat.html#af1cf0c25df4fd1169cc23f7f115ca331" title=" " alt="" coords="5,5,132,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="180,5,300,31"/>
+<area shape="rect" id="Node000002" href="$namespacesat.html#a4d75ecf7f80ea6dbae6c0746c971a508" title=" " alt="" coords="5,5,132,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,21,132,21,132,15,166,15"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="Solver/util/assert.hpp" name="Solver/util/assert.hpp">
-<area shape="rect" id="node1" title="Wrapper around the classic C assert that always evaluates an expression but only checks the result in..." alt="" coords="5,5,165,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="51,80,120,107"/>
+<area shape="rect" id="Node000001" title="Wrapper around the classic C assert that always evaluates an expression but only checks the result in..." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="51,79,120,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,31,88,65,83,65,83,31"/>
 </map>

@@ -1,6 +1,9 @@
 <map id="Solver/util/concepts.hpp" name="Solver/util/concepts.hpp">
-<area shape="rect" id="node1" title="Contains various type traits and concepts." alt="" coords="57,5,235,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,81,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="106,80,186,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="210,80,277,107"/>
+<area shape="rect" id="Node000001" title="Contains various type traits and concepts." alt="" coords="57,5,235,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,81,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,33,73,73,70,68,128,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="106,79,186,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,31,149,65,143,65,143,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="210,79,277,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,29,218,68,215,72,160,33"/>
 </map>

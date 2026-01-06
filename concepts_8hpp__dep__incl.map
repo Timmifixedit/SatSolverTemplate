@@ -1,8 +1,14 @@
 <map id="Solver/util/concepts.hpp" name="Solver/util/concepts.hpp">
-<area shape="rect" id="node1" title="Contains various type traits and concepts." alt="" coords="173,5,352,32"/>
-<area shape="rect" id="node2" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="107,80,245,107"/>
-<area shape="rect" id="node3" href="$inout_8hpp.html" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ..." alt="" coords="5,155,133,181"/>
-<area shape="rect" id="node5" href="$heuristics_8hpp.html" title="Contains different branching heuristics." alt="" coords="270,80,429,107"/>
-<area shape="rect" id="node6" href="$cli_8hpp.html" title="Contains Command Line Interface parsing utility." alt="" coords="453,80,587,107"/>
-<area shape="rect" id="node4" href="$Solver_8hpp.html" title="Contains the main solver class." alt="" coords="158,155,293,181"/>
+<area shape="rect" id="Node000001" title="Contains various type traits and concepts." alt="" coords="198,5,377,31"/>
+<area shape="rect" id="Node000002" href="$Clause_8hpp.html" title="Contains the class Clause that consists of one or more literals." alt="" coords="53,79,191,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,38,150,81,148,76,247,34"/>
+<area shape="rect" id="Node000004" href="$inout_8hpp.html" title="Contains functions for reading and writing dimacs format." alt="" coords="165,152,293,177"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="276,44,258,80,234,152,229,151,253,78,271,41"/>
+<area shape="rect" id="Node000005" href="$heuristics_8hpp.html" title="Contains different branching heuristics." alt="" coords="267,79,425,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="308,40,339,77,334,80,304,43"/>
+<area shape="rect" id="Node000006" href="$cli_8hpp.html" title="Contains Command Line Interface parsing utility." alt="" coords="449,79,584,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="338,32,480,76,479,81,337,37"/>
+<area shape="rect" id="Node000003" href="$Solver_8hpp.html" title="Contains the main solver class." alt="" coords="5,152,140,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,117,83,153,78,150,104,114"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="152,109,213,150,210,154,149,114"/>
 </map>

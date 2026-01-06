@@ -1,5 +1,7 @@
 <map id="sat::var" name="sat::var">
-<area shape="rect" id="node1" title=" " alt="" coords="212,31,283,57"/>
-<area shape="rect" id="node2" href="$namespacesat.html#af1cf0c25df4fd1169cc23f7f115ca331" title=" " alt="" coords="21,5,148,32"/>
-<area shape="rect" id="node3" href="$namespacesat_1_1inout.html#a376589301e45f91e85298fa8fecdc291" title=" " alt="" coords="5,56,164,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="212,31,283,56"/>
+<area shape="rect" id="Node000002" href="$namespacesat.html#a4d75ecf7f80ea6dbae6c0746c971a508" title=" " alt="" coords="21,5,148,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,38,148,30,148,25,199,33"/>
+<area shape="rect" id="Node000003" href="$namespacesat_1_1inout.html#a8d2abdb6674b4fb0d60c61b88c7c01f3" title=" " alt="" coords="5,55,164,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,53,165,58,164,53,198,48"/>
 </map>

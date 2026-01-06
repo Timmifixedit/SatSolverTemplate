@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classsat_1_1MovableHeuristic.html" title="Wrapper for heuristics that do not support move construction or assignment." alt="" coords="5,5,209,32"/>
+<area shape="rect" id="Node000000" href="$classsat_1_1StopWatch.html" title="Used to measure time between start a start and a stop event." alt="" coords="5,5,124,31"/>
+<area shape="rect" id="Node000001" href="$classsat_1_1ScopeWatch.html" title="Stop watch that automatically adds a timing event to a profiler at destruction." alt="" coords="172,5,301,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="138,15,172,15,172,21,138,21"/>
 </map>

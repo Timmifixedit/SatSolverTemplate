@@ -1,5 +1,7 @@
 <map id="Solver/Clause.hpp" name="Solver/Clause.hpp">
-<area shape="rect" id="node1" title="Contains the class Clause that consists of one or more literals." alt="" coords="77,5,216,32"/>
-<area shape="rect" id="node2" href="$inout_8hpp.html" title="Contains functions for reading and writing dimacs format. Also contains printing utilities for basic ..." alt="" coords="5,80,133,107"/>
-<area shape="rect" id="node3" href="$Solver_8hpp.html" title="Contains the main solver class." alt="" coords="158,80,293,107"/>
+<area shape="rect" id="Node000001" title="Contains the class Clause that consists of one or more literals." alt="" coords="81,5,219,31"/>
+<area shape="rect" id="Node000002" href="$Solver_8hpp.html" title="Contains the main solver class." alt="" coords="5,79,140,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,42,87,80,84,76,126,38"/>
+<area shape="rect" id="Node000003" href="$inout_8hpp.html" title="Contains functions for reading and writing dimacs format." alt="" coords="165,79,293,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,38,218,76,214,80,171,42"/>
 </map>

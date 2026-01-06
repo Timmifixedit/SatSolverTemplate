@@ -1,5 +1,7 @@
 <map id="sat::inout::to_dimacs" name="sat::inout::to_dimacs">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,164,57"/>
-<area shape="rect" id="node2" href="$classsat_1_1Variable.html#a12b0343163cd6cee139272081c211e67" title=" " alt="" coords="212,5,344,32"/>
-<area shape="rect" id="node3" href="$namespacesat.html#aacf5510b2316daa5787c58530ba8fc3e" title=" " alt="" coords="243,56,313,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,164,56"/>
+<area shape="rect" id="Node000002" href="$classsat_1_1Variable.html#a12b0343163cd6cee139272081c211e67" title=" " alt="" coords="212,5,344,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,30,198,26,199,31,164,36"/>
+<area shape="rect" id="Node000003" href="$namespacesat.html#aacf5510b2316daa5787c58530ba8fc3e" title=" " alt="" coords="243,55,313,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,51,229,59,229,64,164,56"/>
 </map>
